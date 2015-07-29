@@ -17,15 +17,14 @@ body, div, span, object, iframe, p, blockquote, pre, a, abbr, acronym, address, 
   font-family: inherit;
   vertical-align: baseline;
 }
+/**affix 必须设置**/
+body {
+    position: relative;
+}
 
-	.cat-title{background:#009AE2;color:#fff;text-indent:10px;font-weight:normal;heihgt:45px;line-height:45px;margin:0;}
-	
-	.list_txts_s1{background:#f8f8f8;}
-	.list_txts_s1 li.txt_item{height:45px;line-height:45px;border:1px solid #ddd;border-top:0;}
-	.list_txts_s1 li.txt_item:hover{background-color:#f2f2f2;}
-	.list_txts_s1 li.txt_item a{font-size:16px;color:#333;text-decoration:none;}
-	.list_txts_s1 li.txt_current{background-color:#fff;}
-	.list_txts_s1 li.txt_current a{color:#009AE2;}
+.cat-title{background:#009AE2;color:#fff;text-indent:10px;font-weight:normal;heihgt:45px;line-height:45px;margin:0;}
+
+
 
 	/*文字列表 链接列表 txt_list*/
 .list_txts{margin:0;padding:0;}
@@ -33,68 +32,87 @@ body, div, span, object, iframe, p, blockquote, pre, a, abbr, acronym, address, 
 .list_txts .txt_item span.txt_date{display:block;float:right;color:#999;overflow:hidden;font-weight:normal;}
 .list_txts li.txt_current{font-weight:bold;}
 ul.txts_break li.txt_item{white-space:normal;}
-
-.list_txts_def{} /*默认情况*/
-.list_txts_def li.txt_item{line-height:2.2em;background:url(images/list_dot.png) 7px 1em no-repeat;padding:0 0.5em 0 18px;}
-.list_txts_dashline{}/*虚线*/
-.list_txts_dashline li.txt_item{line-height:2.2em;border-bottom:1px dashed #E5E5E5;padding:0 0.8em;}
-.list_txts_dashline li.txt_current{}
-.list_txts_dashline li.txt_last{}
 .list_txts_s1{} /*虚线 + 左边蓝色三角形*/
 .list_txts_s1 li.txt_item{line-height:2.2em;background:url(http://static.yunimg.cn/application/views/default/space/images/list_a_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
-.list_txts_s2{} /*虚线 + 左边黑色三角形*/
-.list_txts_s2 li.txt_item{line-height:2.2em;background:url(images/list_b_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
-.list_txts_s3{} /*虚线 + 左边黑色三角形*/
-.list_txts_s3 li.txt_item{line-height:2.2em;background:url(images/list_c_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
-.list_txts_s4{padding:6px 0;background:#F5F5F5;border:1px solid #E2E2E2;border-radius:5px;-webkit-border-radius:5px;} /*大块，放左边*/
-.list_txts_s4 li.txt_item{height:41px;line-height:41px;border-bottom:solid 1px #ECECEC;border-top:solid 1px #FFF;padding:0 10px 0 20px;}
-ul.list_txts_s4 li.txt_first{border-top:none;}
-ul.list_txts_s4 li.txt_last{border-bottom:none;}
-.list_txts_s4 li.txt_current{background-color:#1787C3;color:#FFF;font-size:18px;font-weight:800;}
-.list_txts_s4 li.txt_current a{color:#FFF;}
-.list_txts_s4 li.txt_current span.txt_date{font-size:12px;}
+.list_txts_s1{background:#f8f8f8;}
+.list_txts_s1 li.txt_item{height:45px;line-height:45px;border:1px solid #ddd;border-top:0;}
+.list_txts_s1 li.txt_item:hover{background-color:#f2f2f2;}
+.list_txts_s1 li.txt_item a{font-size:16px;color:#333;text-decoration:none;}
 
-	</style>
+.affix-top{
+	position: fixed;
+}
+.affix{
+	position: fixed;
+}
+
+.nav {
+	width:256px;
+}
+.nav li.active{
+	background: #f2f2f2;
+}
+</style>
+
 </head>
-<body>
-	<div id="container">
-		<div style="overflow:hidden; float:left;min-height:1px;width:256px;margin-right:10px;" class="col narrow col_narrow">
-		<div class="col_inner"><div class="style_land pagelet_outer " style="overflow:visible;position:static;">
-			<div style="">
-				<div class="html_code_outer">
-				<h3 class="cat-title">交易</h3>
-				</div>
-			</div>
-		</div>
-		<div  class="style_land pagelet_outer " style="overflow:visible;position:static;">
-		<div sub-puni="sub_puni_1371469737_633670" class="sub_puni_1371469737_633670" style="">
-			<ul class="list_txts list_txts_s1" >
-				<li class="txt_item">
-						<a href="/news/c2/">云计算</a>	</li>
-				<li class="txt_item">
-						<a href="/news/c3/">云建站</a>	</li>
-				<li class="txt_item">
-						<a href="/news/c27/">公司简介</a>	</li>
-				<li class="txt_item">
-						<a href="/news/c26/">联系我们</a>	</li>
-				<li class="txt_item">
-						<a href="/news/c28/">服务项目</a>	</li>
-				<li class="txt_item">
-						<a href="/news/c29/">团队介绍</a>	</li>
-				<li class="txt_item txt_last">
-						<a href="/news/c37/">业界新闻</a>	</li>
-			</ul>
-		</div>
-		</div>
-		</div>
-		</div>
+<body data-spy="scroll" data-target=".scrollspy">
+<div id="container">
+	<div class="scrollspy">
+		<ul class="nav list_txts list_txts_s1" data-spy="affix">
+			<li class="" style=><h3 class="cat-title">交易</h3></li>
+			<li class="txt_item"><a href="#ywjs">业务介绍</a></li>
+            <li class="txt_item"><a href="#ywlc">业务流程</a></li>
+            <li class="txt_item"><a href="#cxd">业务创新点</a></li>
+            <li class="txt_item"><a href="#ywzs">业务展示</a></li>
+		</ul>
+	</div>
 
 
-<div style="overflow:hidden; float:left;min-height:1px;width:894px;" class="col wide col_wide">
-<div class="col_inner">
-aa
+	<div style="padding-left:300px">
+		<h2 id="ywjs">业务介绍</h2>
+            <p>腾讯自选股是一款简洁易用的手机股票应用，免费提供A股、港股、美股三大市场实时行情，截至2014年底，腾讯自选股已拥有4000多万用户。
+			为了优化客户体验，满足用户即看即交易的需求，腾讯自选股与金微蓝合作推出自选股APP内的原生态证券交易功能。随着一码通上线，一个客户可以方便的在多家券商开立多个资金账户，为了简化客户购买流程，方便客户的多向选择，客户可在自选股界面绑定多个资金账户并切换账户进行交易。
+			</p>
+            <hr>
+            <h2 id="ywlc">业务流程</h2>
+             <h3>第一步 个人登录</h3>
+             <p>客户通过输入资金账号及密码登录自选股，完成该资金账号下的持仓查询、股票买卖、银证转账等操作；若客户同时绑定多个资金账号，登录后还可以对于券商账户进行管理，完成多个资金账号之间的切换；登陆后客户可以直接查看查看持有资产数与盈亏额度，为了兼顾安全性和客户体验，若在14天内客户无交易操作，需要输入交易密码重新登录。</p>
+             <h3>第二步 行情查看</h3>
+             <p>用户通过行情页面可以对行情进行查看，并通过编辑来对自己关注的股票进行添加和删除；添加成为自选股后，点击进入行情浏览详细界面，可以设置股票购买提醒、进行持仓查询、删除自选操作</p>
+             <h3>第三步 股票买卖</h3>
+             <p>用户在选定目标股票后，通过填写买入/卖出价格和数量，输入交易密码，即可完成交易下单。为了兼顾安全性和客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易</p>
+             <h3>第四步 委托查询</h3>
+             <p>客户可利用自选股APP进行新股中签查询和新股配号查询，对于普通的委托交易也以查询当日成交记录与历史成交记录。</p>
+             <h3>第五步 资金转账</h3>
+             <p>用户通过转账将银行卡里的资金转入证券账户或者将证券账户的资金提现，为了保障资金的安全性，客户需要通过输入资金密码与交易密码成资金转移过程。在保障安全性的同时，因充分考虑到客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易。</p>
+             <h3>第六步 相关查询</h3>
+             <p>客户可对转账记录、委托记录进行相关查询。</p>
+            <hr>
+            <h2 id="cxd">业务创新点</h2>
+            <p>	超高性能---我们充分考虑系统要满足业务高峰交易处理的需要，确保7*24小时全天候、不间断的服务。</p>
+				<p>极易扩展----证通云平台所选用的硬件及软件架构具有良好的扩展能力，支持系统规模的快速扩大（接入更多金融机构）和业务范围的深度扩展（加载更多业务），能够满足今后业务发展的需要。</p>
+				<p>保证安全----自选股渠道证券业务实现建立在成熟稳定的硬件环境和应用软件基础上，证通行业云与腾讯云、证通行业云与金融机构之间均通过专线对接，在数据传输过程中对所有敏感数据进行加密，确保数据传输的安全性。</p>
+
+            <p>	方便运维----证通行业云端集成了高效的运维监控和风险报警系统，在系统处理异常时能够根据日志，快捷方便的定位出错误位置、原因，并可主动发出各种类型的告警信息，告警信息和发布渠道支持自定义；此外，证通行业云具备一定的自我恢复能力，能够通过有效的、统一的手段和机制进行设备管理、应用软件环境设置调整管理、开发管理以及操作员、管理员管理，实现便捷的运维和高效的风险管控。</p>
+            <hr>
+            <h2 id="ywzs">业务展示</h2>
+            <h3>手机端</h3>
+
+	                 <img src="../../resource/images/product/jy_yw_1.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_2.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_3.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_4.png" width="123" height="300" />
+
+	     </div>
+	
 </div>
-</div>
-		</div>
+
+		<script src="../../resource/js/libs/jquery.min.js"></script>
+		<script src="../../resource/js/libs/affix.js"></script>
+		<script>
+		(function(){
+			//$('#affixNav').affix();
+		})();
+		</script>
 </body>
 </html>

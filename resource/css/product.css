@@ -7,7 +7,7 @@ body {
   margin:0; padding:0;
   
 }
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+body, h1, h2, h3, h4, h5, h6, hr, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
   padding: 0;
 }
@@ -160,6 +160,17 @@ img{border:0;}
 .h-box h3{font-size:36px;margin-top:50px;color:#444;font-weight:700;}/*color:#0b8fe8;*/
 .h-box p{font-size:20px;}
 .h-box .h-box-inner{width:1160px;margin:0 auto;}
+
+.h-box-b .txt-box{margin-left:27px;margin-top:0px;width:500px;height:450px}
+.h-box-b .img-box{padding-right:57px;margin-top:50px;}
+.color-tips{margin-top:20px;width:100%;}
+.color-tips li{color:#fff;padding:3px 12px;float:left;border-radius:2px;margin-right:12px;margin-bottom:12px;font-size:16px;}
+.color-tips .item-1{background:#4DBFF5;}
+.color-tips .item-2{background:#F16BAA;}
+.color-tips .item-3{background:#35C5A4;}
+.color-tips .item-4{background:#F57919;}
+.color-tips .item-5{background:#93C12A;}
+.color-tips a{color:#ffffff;}
 
 #jy_content img,#fw_content img,#qd_content img{
 	transition: all 1s ease 0s;

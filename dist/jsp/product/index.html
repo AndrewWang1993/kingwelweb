@@ -3,206 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>产品展示</title>
+	<link rel="stylesheet" href="../../resource/css/toolbar.css">
+	<link rel="stylesheet" href="../../resource/css/product.css">
 </head>
 <style type="text/css">
-body {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  overflow-x: auto;
-  min-width: 1280px;
-}
-a {
-    text-decoration:none;
-}
-
-/**开户**/
-#kh_content{
+/**在线服务**/
+/**交易**/
+#qd_content{
 	background: #efefef;
 }
-.howinvest-desc {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.howinvest-desc .title, .pro-desc .title {
-  font-size: 48px;
-  color: #0075a8;
-}
-.slide-box{
-	width: 590px;
-	height: 390px;
-	background: url(http://www.penging.com/static/images/guide/slide_bg.jpg) no-repeat center center;
-	margin-left:auto;
-	margin-right:auto;
-}
-.slide_wrap{
-	width: 542px;
-	position: relative;
-	padding-left: 24px;
-	padding-top: 22px 
-}
-.op_btn{
-	display: inline-block;
-	position: absolute;
-	width:27px ;
-	height: 86px;
-}
-.op_btn.op_prev{
-	left:-110px;
-	top:160px;
-	background-position: -81px -168px
-}
-.op_prev:hover{
-	background-position: -135px -168px
-}
-.op_btn.op_next{
-	right:-110px;
-	top:160px;
-	background-position: -54px -168px
-}
-.op_next:hover{
-	background-position: -162px -168px
-}
-/*轮播*/
-
-.slider-box-layout{
-	padding: 20px 0; 
-}
-.bx-pager{
-	text-align: center
-}
-.bx-pager-link{
-	margin: 0 38px;
-	display: inline-block;
-	width: 87px;
-	height: 87px;
-	line-height: 87px;
-	color: #fff;
-	text-align: center;
-	font-size: 16px;
-	background: url(http://www.penging.com/static/images/guide/icon-step.png) no-repeat;
-}
-.bx-pager-link.active{
-	background-position: 0 -87px
-}
-
-/**在线服务**/
-.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
-.clearfix, .container {display:block;}
-.wrap { width: 1280px; margin: 0 auto}
-
-.func-dialogue .wrap { overflow: hidden; width: 980px;}
-.func-dialogue p{ font-size: 16px; color: #434a54;line-height: 26px;letter-spacing: 1px;}
-.func-dialogue .func-left { float: left; width: 670px; height: 100%; padding-top: 90px; padding-bottom: 130px; }
-.func-dialogue .func-left h3 img{width: 240px;}
-.func-dialogue .fea-words{ margin-top: 26px;}
-.func-dialogue .func-right{ float: left; height: 100%; padding-top: 90px; padding-bottom: 120px; }
-.func-dialogue .func-right img{ width: 300px;}
-
-#fw_content {
-  background: #414045 url(http://www.rongcloud.cn/images/newVersion/product_13.jpg) 50% 0px / auto 607px no-repeat;
-  border: 8px solid #e9e9e9;
-  border-right: 0;
-  border-left: 0;
-  height: 607px;
-}
-#fw_content p {
-  color: #e1e1e1;
-}
-
-/**交易**/
-#jy_content{
-	
-}
-
-#jy_content img{
-	transition: all 1s ease 0s;
-	transform: scale(0.2);
-	opacity: 0;
-}
-#jy_content .animatedNow img {
-    transform: scale(1) !important;
-    opacity: 1 !important;
-}
-.hyx_nav{
-	height: 300px;
-	margin: 0 auto;
-	background: #495d64;
-}
-.wrapa{
-	margin:0 auto;
-	width:410px;
-} 
-.nav{
-	width:100px;
-	height:58px;
-	background:#339933;
-	display:inline-block;
-	position:relative;
-	line-height:58px;
-	text-align:center;
-	color:#ffffff;
-	font-size:14px;
-	text-decoration:none;
-	float:left;
-	margin-top:31px;
-	margin-right:1px;
-}
-.hyx_nav .hyx{
-	background:#16AFEE;
-}
-.nav s{
-	width:0;
-	height:0;
-	display:block;
-	overflow:hidden;
-	position:absolute;
-	border-left:50px dotted transparent;
-	border-right:50px dotted transparent;
-	border-bottom:30px solid #339933;
-	left:0px;
-	top:-30px;
-}
-.hyx_nav .hyx s{
-	border-bottom:30px solid #16AFEE;
-} 
-.nav b{
-	width:0;
-	height:0;
-	display:block;
-	overflow:hidden;
-	position:absolute;
-	border-left:50px dotted transparent;
-	border-right:50px dotted transparent;
-	border-top:30px solid #339933;
-	bottom:-30px;
-	left:0px;
-} 
-.hyx_nav .hyx b{
-	border-top:30px solid #16AFEE;
-}
-.a0{margin-left:150px;} 
-.a1{margin-left:100px;} 
-.a3{margin-left:50px;} 
-.hyx_nav a:hover{background:#8CBF26;color:#333333;} 
-.hyx_nav a:hover s{border-bottom-color:#8CBF26;} 
-.hyx_nav a:hover b{border-top-color:#8CBF26;} 
-
-.hyx_nav .active{background:#8CBF26;color:#333333;} 
-.hyx_nav .active s{border-bottom-color:#8CBF26;} 
-.hyx_nav .active b{border-top-color:#8CBF26;}
-
 </style>
 
 <body>
 	<div class="container">
 	<div class="hyx_nav">
+		<div style="color: #FFFFFF;float:left;margin-top:40px;margin-left:20px">
+			<span style="font-size: 45px">行业云服务</span>
+			<div style="margin-top:50px;">
+			<p>金微蓝云托管平台由金微蓝与上海证券通信有限公司联合提供，</p>
+			<p>并由专业运维团队保证系统运行的安全可靠</p>
+			</div>
+		</div>
 		<div class="wrapa"> 
 		<a class="nav a1" target="_self" href="#kh_section"><s></s>开户<b></b></a> 
 		<a class="nav a2" target="_self" href="#jy_section"><s></s>交易<b></b></a> 
 		<a class="nav a3" target="_self" href="#fw_section"><s></s>在线服务<b></b></a> 
 		<span class="nav a4 hyx"><s></s>行业云<b></b></span>
-		<a class="nav a5" target="_self" href="#"><s></s>渠道服务<b></b></a> 
-		<a class="nav a6" target="_self" href="#"><s></s>咨询<b></b></a> 
+		<a class="nav a5" target="_self" href="#qd_section"><s></s>渠道服务<b></b></a> 
+		<a class="nav a6" target="_self" href="#ty_section"><s></s>用户体检<b></b></a> 
 		<a class="nav a7" target="_self" href="#"><s></s>咨询<b></b></a> 
 		<a class="nav a6" target="_self" href="#"><s></s>行情<b></b></a> 
 		<a class="nav a7" target="_self" href="#"><s></s>咨询<b></b></a> 
@@ -233,112 +61,139 @@ a {
 		</section>
 		<section id="jy_section">
 			<div id="jy_content">
-					<div class="func-dialogue">
-					    <div class="wrap clearfix">
-					        <div class="func-left">
-					            <h2>交易</h2>
-					            <div class="fea-words">
-					                <p>有了融云，单聊总是能完美融入到每一个应用场景里，</p>
-					                <p>方寸之间，尽显其能。</p>
-					            </div>
-					            <div class="fea-words">
-					                <p>我们还提供多种消息类型，</p>
-					                <p>包括文字、语音片段、图片、位置、VoIP 等内容载体，</p>
-					                <p>让沟通多一种可能。</p>
-					            </div>
-					        </div>
-					        <div class="func-right">
-					            <img id="jyImg" src="http://www.rongcloud.cn/images/newVersion/product_05.png" alt="单聊">
-					        </div>
-					    </div>
+					<div class="h-box bg-ff h-box-b">
+						<div class="h-box-inner">
+							<div class="fl txt-box">
+								<h3>交易</h3>
+								 <p>有了融云，单聊总是能完美融入到每一个应用场景里，</p>
+					             <p>方寸之间，尽显其能。</p>
+					             <p>我们还提供多种消息类型，</p>
+					             <p>包括文字、语音片段、图片、位置、VoIP 等内容载体，</p>
+					             <p>让沟通多一种可能。</p>
+							</div>
+							<div class="fr img-box">
+								<img id="jyImg" src="http://ui.yunimg.cn/hy/10826/1400941212333498005067.png">
+							</div>
+						</div>
 					</div>
+
+
 			</div>
 		</section>
 		<section id="fw_section">
 			<div id="fw_content">
-					<div class="func-dialogue" id="single">
-					    <div class="wrap clearfix">
-					        <div class="func-left">
-					            <h3><img src="../../resource/images/product/product_zxfu.png" alt="单聊"></h3>
-					            <div class="fea-words">
-					                <p>有了融云，单聊总是能完美融入到每一个应用场景里，</p>
-					                <p>方寸之间，尽显其能。</p>
-					            </div>
-					            <div class="fea-words">
-					                <p>我们还提供多种消息类型，</p>
-					                <p>包括文字、语音片段、图片、位置、VoIP 等内容载体，</p>
-					                <p>让沟通多一种可能。</p>
-					            </div>
-					        </div>
-					        <div class="func-right">
-					            
-					        </div>
-					    </div>
+					<div class="h-box bg-f8 h-box-c">
+						<div class="h-box-inner">
+							<div class="fr txt-box">
+								<h3>在线服务</h3>
+								<p>• 国际国内双线支持，无需繁琐备案，在线申请和绑定域名</p>
+								<p>• 一键导入模版和更换模版，直到中意</p>
+								<p>• 修改网站就像修改PPT一样简单，所见即所得</p>
+								<p>• 目前市面上定制性能最好的专业级网站平台</p>
+							</div>
+							<div class="fl img-box">
+								<img id="fwImg" src="http://ui.yunimg.cn/hy/1/1402506683695644003216.png">
+							</div>
+						</div>
 					</div>
 			</div>
 		</section>
-		<section id="qd_section"></section>
+		<section id="qd_section">
+			<div id="qd_content">
+				<div class="h-box bg-ff h-box-b">
+						<div class="h-box-inner">
+							<div class="fl txt-box">
+								<h3>渠道服务</h3>
+								 <p>有了融云，单聊总是能完美融入到每一个应用场景里，</p>
+					             <p>方寸之间，尽显其能。</p>
+					             <p>我们还提供多种消息类型，</p>
+					             <p>包括文字、语音片段、图片、位置、VoIP 等内容载体，</p>
+					             <p>让沟通多一种可能。</p>
+							</div>
+							<div class="fr img-box">
+								<img id="qdImg" src="http://ui.yunimg.cn/hy/10826/1400941212333498005067.png">
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!--产品体验区-->
+		<section id="ty_section">
+			<div class="ty_content bg-f8">
+				 <div class="ty_title">
+				 	<img src="../../resource/images/product/hyty.png">
+				 </div>
+				 <div class="functions">
+			           <ul>
+					        <li class="functions_mobile">
+					        	<img src="../../resource/images/product/yifenzhong.png">
+					        		<ul style="background:url(http://www.wsview.com/images/home/text_bg1.png) no-repeat 0px 20px;">
+							    		<h2>一分钟开户</h2>
+								 </ul>
+							</li>
+							<li class="functions_zhuanma">
+							    <img src="http://www.wsview.com/images/home/yunzhuanma.png">
+							 		 <ul style="background:url(http://www.wsview.com/images/home/text_bg2.png) no-repeat 0px 20px;">
+								     <h2>股票买卖</h2>
+								 </ul>
+							</li>
+							<li class="functions_cdn"><img src="http://www.wsview.com/images/home/cdn.png">
+							  <ul style="background:url(http://www.wsview.com/images/home/text_bg3.png) no-repeat 0px 20px;">
+									<h2>渠道服务</h2>
+								 </ul>
+							</li>
+							<li class="functions_h265" style="margin-right:0;"><img src="http://www.wsview.com/images/home//h.265.png">
+								 
+								 <ul style="background:url(http://www.wsview.com/images/home/text_bg4.png) no-repeat 0px 20px;">
+								    
+								 <span class="number_1">尽请期待</span>
+								<span class="number_2">尽请期待</span>
+								<span class="number_3">尽请期待	</span>
+								 </ul>
+							</li>
+					   </ul>
+					  
+			   </div>
+		   </div>
+
+		</section>
+		<div style="margin-top: 300px;">
+		<p>1</p>
+		   <p>1</p>
+		   <p>1</p>
+		   <p>1</p>
+		   <p>1</p></div>
 	</div>
+
+<!--右下角工具栏-->
+	<div class="toolbar">
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-wechat"></i>
+			<span class="toolbar-text">公共<br/>账号</span>
+		</span>
+		<span class="toolbar-layer toolbar-layer-weixin"></span>
+	</a>
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-bubble"></i>
+			<span class="toolbar-text">反馈<br/>意见</span>
+		</span>
+	</a>
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-phone"></i>
+			<span class="toolbar-text">APP<br/>下载</span>
+		</span>
+		<span class="toolbar-layer toolbar-layer-app"></span>
+	</a>
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-arrow-up2"></i>
+			<span class="toolbar-text">返回<br/>顶部</span>
+		</span>
+	</a>
+</div>
 </body>
-
-<script src="../../resource/js/jquery-1.7.min.js"></script>
-<script src="../../resource/js/jquery.bxslider.js"></script>
-<script type="text/javascript">
-
-(function(){
-	$(".bxslider").bxSlider({
-		auto:true,
-		hideControlOnEnd: true,	
-		hideControlOnEnd: "top",
-		prevSelector:$(".slide_wrap .op_prev")[0],
-		nextSelector:$(".slide_wrap .op_next")[0],
-		stepNavtit:["注册","实名认证","交易","投资"]
-	});
-	$('.bx-controls').eq(0).prependTo('#J-sliderbox');
-
-	var hyx_a = $('.hyx_nav a');
-	setInterval(function(){
-		var i = parseInt(hyx_a.length * Math.random());
-		hyx_a.each(function(index,element){
-			$(this).removeClass('active');
-		})
-		$(hyx_a[i]).addClass('active');
-		//
-	},2000);
-
-         
-         function offset(ele){//计算任意DOM元素距离文档的左或上的绝对偏移
-            var l=ele.offsetLeft;
-            var t=ele.offsetTop;
-            var p=ele.offsetParent;
-            while(p){
-                if(window.navigator.userAgent.indexOf("MSIE 8")>-1){
-                    l+=p.offsetLeft;//加上上一级的边框
-                    t+=p.offsetTop;
-                }else{
-                    l+=p.offsetLeft+p.clientLeft;//加上上一级的边框
-                    t+=p.offsetTop+p.clientTop;
-                }
-                p=p.offsetParent;
-            }
-            return {left:l,top:t}
-
-        }
-        var clientHeight=document.documentElement.clientHeight||document.body.clientHeight;
-		var ele=document.getElementById("jyImg");
-		window.onscroll=function(){
-            var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-            /**/console.log(offset(ele).top+":")
-                console.log(scrollTop+clientHeight)
-
-            if(offset(ele).top+100<scrollTop+clientHeight){
-                $("#jy_content .func-right").addClass("animatedNow")
-                console.log('ok');
-            }
-            if(offset(ele).top>scrollTop+clientHeight){
-                $("#jy_content .func-right").removeClass("animatedNow")
-            }
-        }
-})();
-</script>
+<script src="../../resource/js/libs/require.js" data-main="../../resource/js/product"></script>
 </html>

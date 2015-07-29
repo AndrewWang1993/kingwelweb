@@ -3,93 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>产品展示</title>
-
+	<link rel="stylesheet" href="../../resource/css/toolbar.css">
 	<link rel="stylesheet" href="../../resource/css/product.css">
 </head>
 <style type="text/css">
-
-/**开户**/
-#kh_content{
-	background: #efefef;
-}
-.howinvest-desc {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.howinvest-desc .title, .pro-desc .title {
-  font-size: 48px;
-  color: #0075a8;
-  padding-top:20px;
-  margin-top:0px;
-  margin-bottom:10px;
-}
-.slide-box{
-	width: 590px;
-	height: 390px;
-	background: url(http://www.penging.com/static/images/guide/slide_bg.jpg) no-repeat center center;
-	margin-left:auto;
-	margin-right:auto;
-}
-.slide_wrap{
-	width: 542px;
-	position: relative;
-	padding-left: 24px;
-	padding-top: 22px 
-}
-.op_btn{
-	display: inline-block;
-	position: absolute;
-	width:27px ;
-	height: 86px;
-}
-.op_btn.op_prev{
-	left:-110px;
-	top:160px;
-	background-position: -81px -168px
-}
-.op_prev:hover{
-	background-position: -135px -168px
-}
-.op_btn.op_next{
-	right:-110px;
-	top:160px;
-	background-position: -54px -168px
-}
-.op_next:hover{
-	background-position: -162px -168px
-}
-/*轮播*/
-.slider-box-layout{
-	padding: 20px 0; 
-}
-.bx-pager{
-	text-align: center
-}
-.bx-pager-link{
-	margin: 0 38px;
-	display: inline-block;
-	width: 87px;
-	height: 87px;
-	line-height: 87px;
-	color: #fff;
-	text-align: center;
-	font-size: 16px;
-	background: url(http://www.penging.com/static/images/guide/icon-step.png) no-repeat;
-}
-.bx-pager-link.active{
-	background-position: 0 -87px
-}
-
 /**在线服务**/
-
 /**交易**/
-
-
 #qd_content{
 	background: #efefef;
 }
-
 </style>
 
 <body>
@@ -235,91 +157,39 @@
 		   </div>
 
 		</section>
-		<div style="margin-top: 300px;">
-		<p>1</p>
-		   <p>1</p>
-		   <p>1</p>
-		   <p>1</p>
-		   <p>1</p></div>
-	</div>
+		<div style="height:500px">
+		
+		</div>
+
+<!--右下角工具栏-->
+	<div class="toolbar">
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-wechat"></i>
+			<span class="toolbar-text">公共<br/>账号</span>
+		</span>
+		<span class="toolbar-layer toolbar-layer-weixin"></span>
+	</a>
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-bubble"></i>
+			<span class="toolbar-text">反馈<br/>意见</span>
+		</span>
+	</a>
+	<a href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-phone"></i>
+			<span class="toolbar-text">APP<br/>下载</span>
+		</span>
+		<span class="toolbar-layer toolbar-layer-app"></span>
+	</a>
+	<a id="backTop" href="javascript:;" class="toolbar-item">
+		<span class="toolbar-btn">
+			<i class="toolbar-icon icon-arrow-up2"></i>
+			<span class="toolbar-text">返回<br/>顶部</span>
+		</span>
+	</a>
+</div>
 </body>
-
-<script src="../../resource/js/jquery-1.7.min.js"></script>
-<script src="../../resource/js/jquery.bxslider.js"></script>
-<script type="text/javascript">
-
-(function(){
-	$(".bxslider").bxSlider({
-		auto:true,
-		hideControlOnEnd: true,	
-		hideControlOnEnd: "top",
-		prevSelector:$(".slide_wrap .op_prev")[0],
-		nextSelector:$(".slide_wrap .op_next")[0],
-		stepNavtit:["注册","实名认证","交易","投资"]
-	});
-	$('.bx-controls').eq(0).prependTo('#J-sliderbox');
-
-	var hyx_a = $('.hyx_nav a');
-	setInterval(function(){
-		var i = parseInt(hyx_a.length * Math.random());
-		hyx_a.each(function(index,element){
-			$(this).removeClass('active');
-		})
-		$(hyx_a[i]).addClass('active');
-		//
-	},2000);
-
-         
-         function offset(ele){//计算任意DOM元素距离文档的左或上的绝对偏移
-            var l=ele.offsetLeft;
-            var t=ele.offsetTop;
-            var p=ele.offsetParent;
-            while(p){
-                if(window.navigator.userAgent.indexOf("MSIE 8")>-1){
-                    l+=p.offsetLeft;//加上上一级的边框
-                    t+=p.offsetTop;
-                }else{
-                    l+=p.offsetLeft+p.clientLeft;//加上上一级的边框
-                    t+=p.offsetTop+p.clientTop;
-                }
-                p=p.offsetParent;
-            }
-            return {left:l,top:t}
-
-        }
-        var clientHeight=document.documentElement.clientHeight||document.body.clientHeight;
-		var ele=document.getElementById("jyImg");
-		var ele1=document.getElementById("fwImg");
-		var ele2=document.getElementById("qdImg");
-		window.onscroll=function(){
-            var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-            /*console.log(offset(ele).top+":")
-                console.log(scrollTop+clientHeight)*/
-
-            if(offset(ele).top+100<scrollTop+clientHeight){
-                $("#jy_content .h-box").addClass("animatedShow")
-                //console.log('ok');
-            }
-            if(offset(ele).top>scrollTop+clientHeight){
-                $("#jy_content .h-box").removeClass("animatedShow")
-            }
-
-            if(offset(ele1).top+100<scrollTop+clientHeight){
-                $("#fw_content .h-box").addClass("animatedShow")
-                //console.log('ok');
-            }
-            if(offset(ele1).top>scrollTop+clientHeight){
-                $("#fw_content .h-box").removeClass("animatedShow")
-            }
-
-            if(offset(ele2).top+100<scrollTop+clientHeight){
-                $("#qd_content .h-box").addClass("animatedShow")
-                //console.log('ok');
-            }
-            if(offset(ele2).top>scrollTop+clientHeight){
-                $("#qd_content .h-box").removeClass("animatedShow")
-            }
-        }
-})();
-</script>
+<script src="../../resource/js/libs/require.js" data-main="../../resource/js/product"></script>
 </html>

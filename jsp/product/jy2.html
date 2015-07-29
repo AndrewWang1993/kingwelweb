@@ -5,156 +5,96 @@
 	<title>Document</title>
 
 	<style>
-html, body, div, form, object, iframe, p, table, th, td, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, button, input, span, em, s, b, u, a, img, select, header, footer, nav, menu, article, aside, main, section, time {
+
+	media="screen"
+body, div, span, object, iframe, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, dialog, figure, footer, header, hgroup, nav, section {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
-ul, li {
-  list-style: none;
-}
-#container {
-  position: relative;
-  min-width: 600px;
-  min-height: 580px;
-}
-#content {
-  position: relative;
-  z-index: 0;
-}
-#slidebar {
-  -webkit-transform: translateX(80px) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
-  -moz-transform: translateX(80px) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
-  -ms-transform: translateX(80px) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
-  -o-transform: translateX(80px) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
-  transform: translateX(80px) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
-  -webkit-animation: slidebar .8s ease-out 2.9s 1 normal forwards;
-  -moz-animation: slidebar .8s ease-out 2.9s 1 normal forwards;
-  -ms-animation: slidebar .8s ease-out 2.9s 1 normal forwards;
-  -o-animation: slidebar .8s ease-out 2.9s 1 normal forwards;
-  animation: slidebar .8s ease-out 2.9s 1 normal forwards;
-}
-#slidebar {
-  width: 39px;
-  height: 135px;
-  position: absolute;
-  right: 20px;
-  z-index: 1;
-  margin-top: -67.5px;
-  top: 50%;
-}
-#slidebar li {
-  width: 7px;
-  height: 7px;
-  padding: 10px 16px;
-  position: relative;
-}
-#slidebar a {
-  display: block;
-  width: 7px;
-  height: 7px;
-  border-radius: 3px;
-  cursor: pointer;
-  background: #b2b2b2;
-  -webkit-transition: all .2s linear .2s;
-  -moz-transition: all .2s linear .2s;
-  -ms-transition: all .2s linear .2s;
-  -o-transition: all .2s linear .2s;
-  transition: all .2s linear .2s;
-}
-#slidebar .slidebar-active a {
-  width: 39px;
-  height: 19px;
-  margin: -6px 0 0 -16px;
-  border-radius: 9px;
-  -webkit-transition: all .2s linear 0s;
-  -moz-transition: all .2s linear 0s;
-  -ms-transition: all .2s linear 0s;
-  -o-transition: all .2s linear 0s;
-  transition: all .2s linear 0s;
-}
-#slidebar a {
-  text-decoration: none;
-}
+
+	.cat-title{background:#009AE2;color:#fff;text-indent:10px;font-weight:normal;heihgt:45px;line-height:45px;margin:0;}
+	
+	.list_txts_s1{background:#f8f8f8;}
+	.list_txts_s1 li.txt_item{height:45px;line-height:45px;border:1px solid #ddd;border-top:0;}
+	.list_txts_s1 li.txt_item:hover{background-color:#f2f2f2;}
+	.list_txts_s1 li.txt_item a{font-size:16px;color:#333;text-decoration:none;}
+	.list_txts_s1 li.txt_current{background-color:#fff;}
+	.list_txts_s1 li.txt_current a{color:#009AE2;}
+
+	/*文字列表 链接列表 txt_list*/
+.list_txts{margin:0;padding:0;}
+.list_txts .txt_item{margin:0;line-height:1.8em;clear:both;padding:0 0.5em;list-style:none;white-space:nowrap;text-overflow:ellipsis;}
+.list_txts .txt_item span.txt_date{display:block;float:right;color:#999;overflow:hidden;font-weight:normal;}
+.list_txts li.txt_current{font-weight:bold;}
+ul.txts_break li.txt_item{white-space:normal;}
+
+.list_txts_def{} /*默认情况*/
+.list_txts_def li.txt_item{line-height:2.2em;background:url(images/list_dot.png) 7px 1em no-repeat;padding:0 0.5em 0 18px;}
+.list_txts_dashline{}/*虚线*/
+.list_txts_dashline li.txt_item{line-height:2.2em;border-bottom:1px dashed #E5E5E5;padding:0 0.8em;}
+.list_txts_dashline li.txt_current{}
+.list_txts_dashline li.txt_last{}
+.list_txts_s1{} /*虚线 + 左边蓝色三角形*/
+.list_txts_s1 li.txt_item{line-height:2.2em;background:url(http://static.yunimg.cn/application/views/default/space/images/list_a_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
+.list_txts_s2{} /*虚线 + 左边黑色三角形*/
+.list_txts_s2 li.txt_item{line-height:2.2em;background:url(images/list_b_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
+.list_txts_s3{} /*虚线 + 左边黑色三角形*/
+.list_txts_s3 li.txt_item{line-height:2.2em;background:url(images/list_c_li.gif) 3px center no-repeat;border-bottom:1px dashed #E5E5E5;padding:0 0.5em 0 18px;}
+.list_txts_s4{padding:6px 0;background:#F5F5F5;border:1px solid #E2E2E2;border-radius:5px;-webkit-border-radius:5px;} /*大块，放左边*/
+.list_txts_s4 li.txt_item{height:41px;line-height:41px;border-bottom:solid 1px #ECECEC;border-top:solid 1px #FFF;padding:0 10px 0 20px;}
+ul.list_txts_s4 li.txt_first{border-top:none;}
+ul.list_txts_s4 li.txt_last{border-bottom:none;}
+.list_txts_s4 li.txt_current{background-color:#1787C3;color:#FFF;font-size:18px;font-weight:800;}
+.list_txts_s4 li.txt_current a{color:#FFF;}
+.list_txts_s4 li.txt_current span.txt_date{font-size:12px;}
 
 	</style>
 </head>
 <body>
 	<div id="container">
-			<div id="content">
-				<ul id="slidebar">
-					<li class="slidebar-active">
-						<a href="mainsite/"><span class="slidebar-text">概览</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">云券商</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">领投宝</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">云期货</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">沪股通</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">涌金版</span></a>
-					</li>
-					<li class="">
-						<a href="mainsite/"><span class="slidebar-text">云开户</span></a>
-					</li>
-
-				</ul>
-			
-				<div id="stages" style="font-size: 19.3481481481481px;">
-					<div id="stage-4" class="stage stage-state-wait stage-state-in stage-state-out-in">
-						<div class="stage-content">
-							a
-						</div>
-					</div>
-
-					<div id="stage-2" class="stage stage-state-wait">
-						<div class="stage-content">
-							b
-							
-
-						</div>
-					</div>
-
-					<div id="stage-5" class="stage stage-state-wait">
-						<div class="stage-content">
-c
-						</div>
-					</div>
-
-					<div id="stage-3" class="stage stage-state-wait">
-						<div class="stage-content">
-							d
-						</div>
-					</div>
-
-					<div id="stage-10" class="stage stage-state-wait ge-layer">
-						<div class="stage-content">
-							a
-						</div>
-					</div>
-
-					<div id="stage-11" class="stage stage-state-wait ge-layer">
-						<div class="stage-content">
-							a
-						</div>
-					</div>
-
-					<div id="stage-12" class="stage stage-state-wait ge-layer">
-						<div class="stage-content">
-						a
-
-						</div>
-					</div>
-
+		<div style="overflow:hidden; float:left;min-height:1px;width:256px;margin-right:10px;" class="col narrow col_narrow">
+		<div class="col_inner"><div class="style_land pagelet_outer " style="overflow:visible;position:static;">
+			<div style="">
+				<div class="html_code_outer">
+				<h3 class="cat-title">交易</h3>
 				</div>
 			</div>
+		</div>
+		<div  class="style_land pagelet_outer " style="overflow:visible;position:static;">
+		<div sub-puni="sub_puni_1371469737_633670" class="sub_puni_1371469737_633670" style="">
+			<ul class="list_txts list_txts_s1" >
+				<li class="txt_item">
+						<a href="/news/c2/">云计算</a>	</li>
+				<li class="txt_item">
+						<a href="/news/c3/">云建站</a>	</li>
+				<li class="txt_item">
+						<a href="/news/c27/">公司简介</a>	</li>
+				<li class="txt_item">
+						<a href="/news/c26/">联系我们</a>	</li>
+				<li class="txt_item">
+						<a href="/news/c28/">服务项目</a>	</li>
+				<li class="txt_item">
+						<a href="/news/c29/">团队介绍</a>	</li>
+				<li class="txt_item txt_last">
+						<a href="/news/c37/">业界新闻</a>	</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		</div>
 
+
+<div style="overflow:hidden; float:left;min-height:1px;width:894px;" class="col wide col_wide">
+<div class="col_inner">
+aa
+</div>
+</div>
 		</div>
 </body>
 </html>

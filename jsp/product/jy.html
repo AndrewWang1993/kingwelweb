@@ -19,16 +19,24 @@
 .mr_frUl ul li{display:inline;float:left;height:250px;width:180px;margin-right:13px;overflow:hidden;}
 .mr_frUl ul li img{display:block;margin-bottom:7px;border:1px solid #D8D8D8;}
 .mr_frUl ul li a:hover img{border:1px solid #A0C0EB;}
+
+.nav-tabs{
+	margin-top:150px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #555;
+  cursor: default;
+  background-color: #08c;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
 	</style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
 <div class="container">
-<div class="jumbotron">
-        <h1>交易图片</h1>
-    </div>
     <div class="row">
         <div class="col-xs-3" id="myScrollspy">
-            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix">
                 <li class="active"><a href="#ywjs">业务介绍</a></li>
                 <li><a href="#ywlc">业务流程</a></li>
                 <li><a href="#cxd">业务创新点</a></li>

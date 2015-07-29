@@ -1,0 +1,135 @@
+@charset "utf-8";
+body {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  overflow-x: auto;
+  min-width: 1280px;
+  color: #222;
+  margin:0; padding:0;
+  
+}
+a{text-decoration:none;}
+.bg-ff{background:#fff;}
+.bg-f8{background:#f8f8f8;}
+.bg-f9{background:#efefef;}
+.fl{float:left;}
+.fr{float:right;}
+li{list-style:none;}
+img{border:0;}
+
+/**蜂窝**/
+.hyx_nav{
+	height: 400px;
+	margin: 0 auto;   
+	background-image: none;
+  background-color: #090B1A;}
+.wrapa{width:410px;margin-top: 20px;float: right;margin-right:300px;} 
+.nav{width:100px;height:58px;background:#35C5A4;
+	display:inline-block;
+	position:relative;
+	line-height:58px;
+	text-align:center;
+	color:#ffffff;
+	font-size:14px;
+	text-decoration:none;
+	float:left;
+	margin-top:31px;
+	margin-right:1px;
+}
+.hyx_nav .hyx{
+	background:#16AFEE;
+}
+.nav s{
+	width:0;
+	height:0;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	border-left:50px dotted transparent;
+	border-right:50px dotted transparent;
+	border-bottom:30px solid #35C5A4;
+	left:0px;
+	top:-30px;
+}
+.hyx_nav .hyx s{
+	border-bottom:30px solid #16AFEE;
+} 
+.nav b{
+	width:0;
+	height:0;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	border-left:50px dotted transparent;
+	border-right:50px dotted transparent;
+	border-top:30px solid #35C5A4;
+	bottom:-30px;
+	left:0px;
+} 
+.hyx_nav .hyx b{
+	border-top:30px solid #16AFEE;
+}
+.a0{margin-left:150px;} 
+.a1{margin-left:100px;} 
+.a3{margin-left:50px;} 
+.hyx_nav a:hover{background:#8CBF26;color:#333333;} 
+.hyx_nav a:hover s{border-bottom-color:#8CBF26;} 
+.hyx_nav a:hover b{border-top-color:#8CBF26;} 
+
+.hyx_nav .active{background:#8CBF26;color:#333333;} 
+.hyx_nav .active s{border-bottom-color:#8CBF26;} 
+.hyx_nav .active b{border-top-color:#8CBF26;}
+/**左右box布局**/
+.h-box{overflow:hidden;clear:both;min-height:300px;font-family:Arial,Microsoft Yahei;}
+.h-box .txt-box{max-width:610px;position:relative;}
+.h-box .txt-box .color-tips{position:absolute;z-index:1;}
+.h-box h3{font-size:36px;margin-top:50px;color:#444;font-weight:700;}/*color:#0b8fe8;*/
+.h-box p{font-size:20px;}
+.h-box .h-box-inner{width:1160px;margin:0 auto;}
+
+#jy_content img,#fw_content img,#qd_content img{
+	transition: all 1s ease 0s;
+	transform: scale(0.2);
+	opacity: 0;
+}
+.animatedShow img {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+/**翻转**/
+.functions{ width:1122px; margin:0 auto; margin-top:50px; position:relative;}
+.functions ul{ position:relative;;padding: 0}
+.functions ul li{ float:left; margin-right:35px; width:254px; height:170px;}
+.functions ul li img{ transition:1s; -moz-transition:1s; -weblit-transition:1s;}
+.functions ul li:hover img {transform:rotateY(360deg); -moz-transform:rotateY(360deg); -webkit-transform:rotateY(360deg);}
+/*.functions ul li:hover ul{ opacity:1; filter:alpha(opacity=100);}*/
+.functions ul li ul{ position:absolute; left:0; margin-top:-10px; height:160px; width:1100px; background:red;border-radius:5px; padding:40px 0px 0px 20px; opacity:0; filter:alpha(opacity=0);transition:1s; -moz-transition:1s; -weblit-transition:1s;display:none;}
+.functions ul li ul p{ color:#fff; margin-bottom:15px; font-size:16px;}
+.functions ul li ul span{ display:block; color:#fff; padding-left:30px; line-height:30px; font-size:16px;}
+.number_1{ background:url(http://www.wsview.com/images/home/number1.png) no-repeat left 7px;}
+.number_2{ background:url(http://www.wsview.com/images/home/number2.png) no-repeat left 7px;}
+.number_3{ background:url(http://www.wsview.com/images/home/number3.png) no-repeat left 7px;}
+
+.functions_mobile:hover ul{display:block; opacity:1; filter:alpha(opacity=100); position:absolute; z-index:1001;}
+.functions_zhuanma:hover ul{display:block; opacity:1; filter:alpha(opacity=100); position:absolute; z-index:1001;}
+.functions_cdn:hover ul{display:block; opacity:1; filter:alpha(opacity=100); position:absolute; z-index:1001;}
+.functions_h265:hover ul{display:block; opacity:1; filter:alpha(opacity=100); position:absolute; z-index:1001;}
+
+
+.func_intro{ height:160px; width:1120px; background:red; position:absolute; top:185px; border-radius:5px; display:none;}
+
+
+.ty_title{text-align:center;}
+.ty_title img{ width:100px;margin:0 auto}
+
+.icon-contactWeixin{background-image:url(http://broker.hs.net/image/weixin-xxl.png);}
+.icon-contactWeixin:hover{background-position:-166px 0;}
+
+.functions_zhuanma a {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-bottom: 20px;
+}

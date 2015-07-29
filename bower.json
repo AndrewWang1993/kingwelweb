@@ -1,0 +1,22 @@
+{
+  "name": "kingwelweb",
+  "version": "0.1.0",
+  "authors": [
+    "xxg3053 <xxg3053@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "jsp/index/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bxslider-4": "~4.2.5",
+    "jquery": "~2.1.4",
+    "require": "*"
+  }
+}

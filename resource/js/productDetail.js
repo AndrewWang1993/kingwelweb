@@ -1,6 +1,7 @@
 require.config({
+    urlArgs: "bust=" +  (new Date()).getTime(), //生产环境去掉
     baseUrl: '../../resource/js',
-    shim:{
+    shim:{ //指定依赖
     	bxslider:['jquery'],
     	affix:['jquery'],
         scrollspy:['jquery']
@@ -11,6 +12,7 @@ require.config({
         affix:'libs/affix',
         scrollspy:'libs/scrollspy'
     }
+
 });
 
 require(['jquery','nav','affix','scrollspy'], function($,nav,affix,scrollspy){

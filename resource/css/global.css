@@ -30,18 +30,17 @@ address,caption,cite,code,dfn,em,strong,th,var {
     font-weight:400
 }
 li {
-    list-style:none
-}
+    list-style:none}
 caption,th {
     text-align:left
 }
 h1,h2,h3,h4,h5,h6 {
     font-size:100%;
     font-weight:400}
-/*----------------±³¾°*/
+/*----------------ï¿½ï¿½ï¿½ï¿½*/
 .bg-gray{background:#eff1f4!important;}
 
-/*----------------¸¡¶¯*/
+/*----------------ï¿½ï¿½ï¿½ï¿½*/
 .cm-clear {
     zoom: 1;
 }
@@ -60,7 +59,7 @@ h1,h2,h3,h4,h5,h6 {
     content: "";
     line-height: 0;
 }
-/*----------------ºáÏòÁÐ±í*/
+/*----------------ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½*/
 ul.listLateral li{float:left;list-style:none; display:inline-block;}
 .firstLi {
     margin-top: 0!important;
@@ -70,7 +69,7 @@ ul.listLateral li{float:left;list-style:none; display:inline-block;}
     padding-bottom: 0!important;
 }
 
-/*----------------×ÖÌå---------------*/
+/*----------------ï¿½ï¿½ï¿½ï¿½---------------*/
 .am-ft-xxxl{font-size:24px!important}
 .am-ft-xxl{font-size:20px!important}
 .am-ft-xl{font-size:18px!important}
@@ -95,7 +94,7 @@ ul.listLateral li{float:left;list-style:none; display:inline-block;}
 
 .Linebar{ color:#666666; padding:0 10px; font-size:14px;}
 
-/* ----°´Å¥---- */
+/* ----ï¿½ï¿½Å¥---- */
 .ui-button {
     padding: 0;
     display: inline-block;
@@ -115,7 +114,9 @@ ul.listLateral li{float:left;list-style:none; display:inline-block;}
     overflow: visible;
 }
 .ui-link{ text-align:center; padding:0 10px;}
-
+.mt20 {  margin-top: 20px;  }
+.pt10 {  padding-top: 10px;  }
+.mb20 {  margin-bottom: 20px;  }
 .btn-mred{
     border-radius:10px;
     color: #fff;

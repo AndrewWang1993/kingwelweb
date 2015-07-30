@@ -1,0 +1,8 @@
+.follows{width:1100px; margin: 20px auto; background:#ffffff;}
+.follows .follows_companydetail{border: 1px solid #eaeaea;background-color: #FFFFFF;  border-radius: 4px;min-height: 580px;}
+.follows .follows_companydetail .companydetail-bar{height: 50px;border-bottom: 1px solid #eaeaea; }
+.companydetail-bar .title-founs{height:48px;line-height:48px;font-family: "???ии??иж?бниж?бо"; border-bottom:2px solid #2EA4D2; font-size: 18px; font-weight: 700;margin-left: 20px; display: inline-block;}
+.companydetail-content{margin: 25px 0px 15px 0px;padding-left: 15px; overflow: hidden;}
+.companydetail-content-title{  color: #2EA4D2;font-size: 18px;height: 40px;line-height: 40px;padding-left: 25px;}
+.companydetail-content-essay{  color: #343434;text-indent: 2em;padding-left: 25px;padding-right: 40px;font-size: 14px;line-height: 28px;padding-bottom: 30px;}
+/*?бн???бзиж?бо???ииб░?*/

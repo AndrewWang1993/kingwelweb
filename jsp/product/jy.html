@@ -2,113 +2,234 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>交易</title>
-	<link rel="stylesheet" href="../../resource/js/libs/bootstrap/css/bootstrap.min.css">
+	<title>交易介绍</title>
+ 	<link href="../../resource/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+	 <link href="../../resource/css/head.css" rel="stylesheet" type="text/css" media="screen" />
+	 <link href="../../resource/css/foot.css" rel="stylesheet" type="text/css" media="screen" />
 
-
-	<script src="../../resource/js/libs/jquery.min.js"></script>
-	<script src="../../resource/js/libs/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../resource/js/jquery.SuperSlide.js"></script>
-	<style>
-.mr_t1{width:1100px; margin:0 auto;height:50px;}
-.mr_t1name{font:bold 30px/40px ;height:40px;width:150px;float:left;}
-.mr_frbox{height:70px;padding:24px; width: 1000px; margin: 0px auto;}
-.mr_frBtnL{float:left;margin:2px 40px 0px 40px;cursor:pointer;display:inline;}
-.mr_frUl{float:left;height:65px;width: 828px;}
-.mr_frBtnR{float:left;margin-top:2px;cursor:pointer;padding-left: 30px; }
-.mr_frUl ul li{display:inline;float:left;height:250px;width:180px;margin-right:13px;overflow:hidden;}
-.mr_frUl ul li img{display:block;margin-bottom:7px;border:1px solid #D8D8D8;}
-.mr_frUl ul li a:hover img{border:1px solid #A0C0EB;}
-
-.nav-tabs{
-	margin-top:150px;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: #555;
-  cursor: default;
-  background-color: #08c;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
-}
-	</style>
+	<link rel="stylesheet" href="../../resource/css/productDetail.css">
 </head>
-<body data-spy="scroll" data-target="#myScrollspy">
-<div class="container">
-    <div class="row">
-        <div class="col-xs-3" id="myScrollspy">
-            <ul class="nav nav-tabs nav-stacked" data-spy="affix">
-                <li class="active"><a href="#ywjs">业务介绍</a></li>
-                <li><a href="#ywlc">业务流程</a></li>
-                <li><a href="#cxd">业务创新点</a></li>
-                <li><a href="#ywzs">业务展示</a></li>
-            </ul>
+<body data-target=".scollspy">
+<!--头部-->
+<header>
+    <div class="header">
+        <div class="header_con">
+            <div class="header_conl">
+                <a href="#" rel="nofollow" target="_self">登陆</a>
+                <span>|</span>
+                <a href="#" rel="nofollow" target="_self">注册</a>
+                <span>|</span>
+                <a href="#" rel="nofollow" target="_self">我的兴趣</a>
+            </div>
         </div>
-        <div class="col-xs-9">
-            <h2 id="ywjs">业务介绍</h2>
+    </div>
+</header>
+<!--头部-->
+<!--导航-->
+<nav>
+    <div class="gh-navbar">
+        <div class="gh-navbar-wrapper grid-940">
+            <a class="gh-logo" href="/"></a>
+            <div class="gh-logotitle" >
+                <span class="logotitle1" >诚至金开</span>
+                <span  class="logotitle2">开创微蓝</span>
+            </div>
+            <div class="navbox">
+                <div class="nav">
+                    <ul class="clearfix">
+                        <li><a class="drop-menu-effect"  href="../../jsp/index/index.html"><span>首页</span></a></li>
+                        <li class="drop-menu-effect">
+                            <a href="../../jsp/followKingwelan/followkingwelan.html"><span>关注金微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">公司简介</a></li>
+                                <li><a href="http://www.17sucai.com/">企业文化</a></li>
+                                <li><a href="http://www.17sucai.com/">组织架构</a></li>
+                                <li><a href="http://www.17sucai.com/">疑问解答</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>产品“4S”店</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">产品体验区</a></li>
+                                <li><a href="http://www.17sucai.com/">产品展示区</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>联手金微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">证券公司入口</a></li>
+                                <li><a href="http://www.17sucai.com/">互联网企业入口</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>蓝精灵</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">加入蓝家族</a></li>
+                                <li><a href="http://www.17sucai.com/">蓝精灵风采</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a href="../../jsp/welan/welannews.html"><span>微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">新闻资讯</a></li>
+                                <li><a href="http://www.17sucai.com/">媒体报道</a></li>
+                                <li><a href="http://www.17sucai.com/">微蓝解读</a></li>
+                                <li><a href="http://www.17sucai.com/">微蓝起舞</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!--导航-->
+<div class="container">
+    <div class="subhead">
+    	<div class="text">
+    		<h1>交易</h1>
+    		<p>介绍、流程</p>
+    	</div>
+    </div>
+	<div class="scollspy">
+		<ul class="snav">
+			<li><a href="#"><h3 class="title">交易</h3></a></li>
+			<li><a href="#ywjs">业务介绍</a></li>
+            <li><a href="#ywlc">业务流程</a>
+				<ul class="snav">
+					<li><a href="#grdl">个人登录</a></li>
+					<li><a href="#hqck">行情查看</a></li>
+					<li><a href="#gpmm">股票买卖</a></li>
+					<li><a href="#wtjy">委托查询</a></li>
+					<li><a href="#zjzz">资金转账</a></li>
+					<li><a href="#xgcx">相关查询</a></li>
+
+				</ul>
+            </li>
+            <li><a href="#cxd">业务创新点</a></li>
+            <li><a href="#ywzs">业务展示</a></li>
+		</ul>
+	</div>
+
+
+	<div class="content">
+		<section id="ywjs">
+			<h2>业务介绍</h2>
             <p>腾讯自选股是一款简洁易用的手机股票应用，免费提供A股、港股、美股三大市场实时行情，截至2014年底，腾讯自选股已拥有4000多万用户。
 			为了优化客户体验，满足用户即看即交易的需求，腾讯自选股与金微蓝合作推出自选股APP内的原生态证券交易功能。随着一码通上线，一个客户可以方便的在多家券商开立多个资金账户，为了简化客户购买流程，方便客户的多向选择，客户可在自选股界面绑定多个资金账户并切换账户进行交易。
 			</p>
-            <hr>
-            <h2 id="ywlc">业务流程</h2>
-             <h3>第一步 个人登录</h3>
-             <p>客户通过输入资金账号及密码登录自选股，完成该资金账号下的持仓查询、股票买卖、银证转账等操作；若客户同时绑定多个资金账号，登录后还可以对于券商账户进行管理，完成多个资金账号之间的切换；登陆后客户可以直接查看查看持有资产数与盈亏额度，为了兼顾安全性和客户体验，若在14天内客户无交易操作，需要输入交易密码重新登录。</p>
-             <h3>第二步 行情查看</h3>
-             <p>用户通过行情页面可以对行情进行查看，并通过编辑来对自己关注的股票进行添加和删除；添加成为自选股后，点击进入行情浏览详细界面，可以设置股票购买提醒、进行持仓查询、删除自选操作</p>
-             <h3>第三步 股票买卖</h3>
-             <p>用户在选定目标股票后，通过填写买入/卖出价格和数量，输入交易密码，即可完成交易下单。为了兼顾安全性和客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易</p>
-             <h3>第四步 委托查询</h3>
-             <p>客户可利用自选股APP进行新股中签查询和新股配号查询，对于普通的委托交易也以查询当日成交记录与历史成交记录。</p>
-             <h3>第五步 资金转账</h3>
-             <p>用户通过转账将银行卡里的资金转入证券账户或者将证券账户的资金提现，为了保障资金的安全性，客户需要通过输入资金密码与交易密码成资金转移过程。在保障安全性的同时，因充分考虑到客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易。</p>
-             <h3>第六步 相关查询</h3>
-             <p>客户可对转账记录、委托记录进行相关查询。</p>
-            <hr>
-            <h2 id="cxd">业务创新点</h2>
+		</section>
+		<section id="ywlc">
+			<h2>业务流程</h2>
+			  <section id="grdl">
+			  	<h3>第一步 个人登录</h3>
+            	 <p>客户通过输入资金账号及密码登录自选股，完成该资金账号下的持仓查询、股票买卖、银证转账等操作；若客户同时绑定多个资金账号，登录后还可以对于券商账户进行管理，完成多个资金账号之间的切换；登陆后客户可以直接查看查看持有资产数与盈亏额度，为了兼顾安全性和客户体验，若在14天内客户无交易操作，需要输入交易密码重新登录。</p>
+			  </section>
+               <section id="hqck">
+               	 <h3>第二步 行情查看</h3>
+             	<p>用户通过行情页面可以对行情进行查看，并通过编辑来对自己关注的股票进行添加和删除；添加成为自选股后，点击进入行情浏览详细界面，可以设置股票购买提醒、进行持仓查询、删除自选操作</p>
+               </section>
+            	<section id="gpmm">
+            		<h3>第三步 股票买卖</h3>
+            		 <p>用户在选定目标股票后，通过填写买入/卖出价格和数量，输入交易密码，即可完成交易下单。为了兼顾安全性和客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易</p>
+            	</section>
+             	<section id="wtjy">
+             		<h3>第四步 委托查询</h3>
+            		 <p>客户可利用自选股APP进行新股中签查询和新股配号查询，对于普通的委托交易也以查询当日成交记录与历史成交记录。</p>
+             	</section>
+                 <section id="zjzz">
+                 	<h3>第五步 资金转账</h3>
+            		 <p>用户通过转账将银行卡里的资金转入证券账户或者将证券账户的资金提现，为了保障资金的安全性，客户需要通过输入资金密码与交易密码成资金转移过程。在保障安全性的同时，因充分考虑到客户体验，页面支持客户自行设置交易密码有效期，最高可实现15分钟的免密交易。</p>
+                 </section>
+             	  <section id="xgcx">
+             	  	<h3>第六步 相关查询</h3>
+             		<p>客户可对转账记录、委托记录进行相关查询。</p>
+             	  </section>
+             
+		</section>
+         <section id="cxd">
+         	 <h2>业务创新点</h2>
             <p>	超高性能---我们充分考虑系统要满足业务高峰交易处理的需要，确保7*24小时全天候、不间断的服务。</p>
-	<p>极易扩展----证通云平台所选用的硬件及软件架构具有良好的扩展能力，支持系统规模的快速扩大（接入更多金融机构）和业务范围的深度扩展（加载更多业务），能够满足今后业务发展的需要。</p>
-	<p>保证安全----自选股渠道证券业务实现建立在成熟稳定的硬件环境和应用软件基础上，证通行业云与腾讯云、证通行业云与金融机构之间均通过专线对接，在数据传输过程中对所有敏感数据进行加密，确保数据传输的安全性。</p>
+				<p>极易扩展----证通云平台所选用的硬件及软件架构具有良好的扩展能力，支持系统规模的快速扩大（接入更多金融机构）和业务范围的深度扩展（加载更多业务），能够满足今后业务发展的需要。</p>
+				<p>保证安全----自选股渠道证券业务实现建立在成熟稳定的硬件环境和应用软件基础上，证通行业云与腾讯云、证通行业云与金融机构之间均通过专线对接，在数据传输过程中对所有敏感数据进行加密，确保数据传输的安全性。</p>
 
             <p>	方便运维----证通行业云端集成了高效的运维监控和风险报警系统，在系统处理异常时能够根据日志，快捷方便的定位出错误位置、原因，并可主动发出各种类型的告警信息，告警信息和发布渠道支持自定义；此外，证通行业云具备一定的自我恢复能力，能够通过有效的、统一的手段和机制进行设备管理、应用软件环境设置调整管理、开发管理以及操作员、管理员管理，实现便捷的运维和高效的风险管控。</p>
-            <hr>
-            <h2 id="ywzs">业务展示</h2>
-            <h3>手机端</h3>
+         </section>
+         <section id="ywzs">
+         	 <h2>业务展示</h2>
+             <h3>手机端</h3>
 
-	        <div class="mr_frbox">
-	            <img class="mr_frBtnL prev" src="../../resource/images/mfrL.jpg" width="28" height="46" />
-	            <div class="mr_frUl">
-	                <ul>
-	                    <li><a href="#" target="_blank">
-	                    	<img src="../../resource/images/product/jy_yw_1.png" width="123" height="300" /></a>
-	                    </li>
-	                    <li><a href="#" target="_blank">
-	                    	<img src="../../resource/images/product/jy_yw_2.png" width="123" height="300" /></a>
-	                    </li>
-	                    <li><a href="#" target="_blank">
-	                    	<img src="../../resource/images/product/jy_yw_3.png" width="123" height="300" /></a>
-	                    </li>
-	                    <li><a href="#" target="_blank">
-	                    	<img src="../../resource/images/product/jy_yw_4.png" width="123" height="300" /></a>
-	                    </li>
-	                </ul>
-	            </div>
-	            <img class="mr_frBtnR next" src="../../resource/images/mfrR.jpg" width="28" height="46" />
-	        </div>
+	                 <img src="../../resource/images/product/jy_yw_1.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_2.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_3.png" width="123" height="300" />
+	                 <img src="../../resource/images/product/jy_yw_4.png" width="123" height="300" />
+         </section>
            
-        </div>
-    </div>
+
+	     </div>
+	
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-    	$(".mr_frbox").slide({
-        titCell:"",
-        mainCell:".mr_frUl ul",
-        autoPage:true,
-        effect:"leftLoop",
-        autoPlay:true,
-        vis:6
-    });
-    });
-    	</script>
+<footer>
+    <div class="footer_con">
+        <div class="footer_top">
+            <div class="footer_nav">
+                <dl >
+                    <dt><a rel="nofollow">帮助中心</a></dt>
+                    <dd>
+                        <a href="/helpCenter/1.html" rel="nofollow">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="/helpCenter/3.html">易机课堂</a>
+                    </dd>
+                    <dd>
+                        <a href="/news/38.html">易机资讯</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a>服务中心</a></dt>
+                    <dd>
+                        <a href="/helpCenter/2.html" rel="nofollow">服务条款</a>
+                    </dd>
+                    <dd>
+                        <a href="/helpCenter/4.html" rel="nofollow">担保交易</a>
+                    </dd>
+                    <dd>
+                        <a href="/zhijianDetail.html" rel="nofollow">质检说明</a>
+                    </dd>
+                </dl>
+                <dl >
+                    <dt><a rel="nofollow">关于我们</a></dt>
+                    <dd>
+                        <a href="/about_yjw.html" rel="nofollow">了解我们</a>
+                    </dd>
+                    <dd>
+                        <a href="/aboutus/12.html" rel="nofollow">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="/aboutus/13.html" rel="nofollow">加入我们</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="erweima"><img src="../../resource/images/index/03_22.png"></div>
+        <div class="address">
+            <ul>
+                <li><img src="../../resource/images/index/03_07.png"></li>
+                <li><img src="../../resource/images/index/03_09.png"></li>
+                <li><img src="../../resource/images/index/03_12.png"></li>
+                <li><img src="../../resource/images/index/03_15.png"></li>
+            </ul>
+            <div>深圳市金微蓝技术有限公司</div>
+            <p class="p2">金证股份 成员企业</p>
+            <p>深圳市南山区高新七道12号汇恒大厦一期二楼</p>
+            <p>邮编：51807</p>
+            <p>电话：0755-XXXXXXXXX</p>
+        </div>
+    </div>
+</footer>
+<script src="../../resource/js/libs/require.js" data-main="../../resource/js/productDetail"></script>
 </body>
 </html>

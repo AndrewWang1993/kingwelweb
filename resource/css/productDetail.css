@@ -1,0 +1,146 @@
+media="screen"
+body, div, span, object, iframe, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+li,ul,ol{list-style:none;}
+a{text-decoration:none;}
+/**affix 必须设置**/
+body {
+    position: relative;
+}
+
+.scollspy>.snav .title{
+	text-indent:10px;
+	font-weight:normal;
+	height:45px;
+	line-height:45px;
+	margin:0;
+}
+
+.scollspy .snav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.scollspy .snav>li {
+  position: relative;
+  display: block;
+ 
+}
+
+ .scollspy .snav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: black;
+}
+
+ .scollspy .snav li a:hover,
+ .scollspy .snav li a:focus {
+  background: #86c5da;
+}
+
+ .scollspy .snav .active {
+  font-weight: bold;
+  background: #72bcd4;
+}
+
+.scollspy>.snav .snav {
+  display: none;
+}
+
+.scollspy>.snav .active .snav {
+  display: block;
+}
+
+ .scollspy>.snav .snav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+
+ .scollspy>.snav .snav span {
+  margin: 0 5px 0 2px;
+}
+
+ .scollspy>.snav .snav .active a,
+ .scollspy>.snav .snav .active:hover a,
+ .scollspy>.snav .snav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+  .scollspy>.snav .snav .active span,
+  .scollspy>.snav .snav .active:hover span,
+  .scollspy>.snav .snav .active:focus span {
+  display: none;
+}
+
+.scollspy>.affix-top{
+   position: relative;
+}
+.scollspy>.affix {
+  top: 100px;
+  position: fixed;
+}
+.scollspy,
+.scollspy>.affix-top ,
+.scollspy>.affix, 
+.scollspy>.affix-bottom {
+    width: 213px;
+    margin-left:20px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+
+.scollspy{
+  float:left;
+}
+.container .content{
+  margin-left: 300px;
+}
+
+ .container section {
+  padding: 40px 0;
+  border-bottom: 1px solid #c1e1ec;
+}
+.container section:last-child {
+  border-bottom: none;
+}
+.container h1 {
+  font-size: 36px;
+  margin-top: 50px;
+  color: #444;
+  font-weight: 700;
+}
+.container section h2{
+  font-size: 25px;
+  margin-top: 20px;
+  color: #444;
+  font-weight: 500;
+}
+.container section p {
+   font-size: 20px;
+}
+.container .subhead{
+  background-color: #ECF0F1;
+  background-image: url(http://ui.yunimg.cn/hy/1/1401022414277267003055.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+  height: 150px;
+}
+
+.container .subhead .text{
+  margin-top:20px;
+  margin-left: 40px;
+}

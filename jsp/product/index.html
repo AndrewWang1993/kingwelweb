@@ -3,41 +3,115 @@
 <head>
 	<meta charset="UTF-8">
 	<title>产品展示</title>
+	 <link href="../../resource/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+	 <link href="../../resource/css/head.css" rel="stylesheet" type="text/css" media="screen" />
+	 <link href="../../resource/css/foot.css" rel="stylesheet" type="text/css" media="screen" />
+	 
 	<link rel="stylesheet" href="../../resource/css/toolbar.css">
 	<link rel="stylesheet" href="../../resource/css/product.css">
+	
 </head>
-<style type="text/css">
-/**在线服务**/
-/**交易**/
-#qd_content{
-	background: #efefef;
-}
-</style>
-
 <body>
+<!--头部-->
+<header>
+    <div class="header">
+        <div class="header_con">
+            <div class="header_conl">
+                <a href="#" rel="nofollow" target="_self">登陆</a>
+                <span>|</span>
+                <a href="#" rel="nofollow" target="_self">注册</a>
+                <span>|</span>
+                <a href="#" rel="nofollow" target="_self">我的兴趣</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--头部-->
+<!--导航-->
+<nav>
+    <div class="gh-navbar">
+        <div class="gh-navbar-wrapper grid-940">
+            <a class="gh-logo" href="/"></a>
+            <div class="gh-logotitle" >
+                <span class="logotitle1" >诚至金开</span>
+                <span  class="logotitle2">开创微蓝</span>
+            </div>
+            <div class="navbox">
+                <div class="nav">
+                    <ul class="clearfix">
+                        <li><a class="drop-menu-effect"  href="../../jsp/index/index.html"><span>首页</span></a></li>
+                        <li class="drop-menu-effect">
+                            <a href="../../jsp/followKingwelan/followkingwelan.html"><span>关注金微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">公司简介</a></li>
+                                <li><a href="http://www.17sucai.com/">企业文化</a></li>
+                                <li><a href="http://www.17sucai.com/">组织架构</a></li>
+                                <li><a href="http://www.17sucai.com/">疑问解答</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>产品“4S”店</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">产品体验区</a></li>
+                                <li><a href="http://www.17sucai.com/">产品展示区</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>联手金微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">证券公司入口</a></li>
+                                <li><a href="http://www.17sucai.com/">互联网企业入口</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a target="_blank" href="http://www.17sucai.com/"><span>蓝精灵</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">加入蓝家族</a></li>
+                                <li><a href="http://www.17sucai.com/">蓝精灵风采</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu-effect">
+                            <a href="../../jsp/welan/welannews.html"><span>微蓝</span></a>
+                            <ul class="submenu">
+                                <li><a href="http://www.17sucai.com/">新闻资讯</a></li>
+                                <li><a href="http://www.17sucai.com/">媒体报道</a></li>
+                                <li><a href="http://www.17sucai.com/">微蓝解读</a></li>
+                                <li><a href="http://www.17sucai.com/">微蓝起舞</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!--导航-->
 	<div class="container">
 	<div class="hyx_nav">
 		<div style="color: #FFFFFF;float:left;margin-top:40px;margin-left:20px">
 			<span style="font-size: 45px">行业云服务</span>
-			<div style="margin-top:50px;">
+			<div style="margin-top:50px;font-size:20px">
 			<p>金微蓝云托管平台由金微蓝与上海证券通信有限公司联合提供，</p>
 			<p>并由专业运维团队保证系统运行的安全可靠</p>
 			</div>
 		</div>
 		<div class="wrapa"> 
-		<a class="nav a1" target="_self" href="#kh_section"><s></s>开户<b></b></a> 
-		<a class="nav a2" target="_self" href="#jy_section"><s></s>交易<b></b></a> 
-		<a class="nav a3" target="_self" href="#fw_section"><s></s>在线服务<b></b></a> 
-		<span class="nav a4 hyx"><s></s>行业云<b></b></span>
-		<a class="nav a5" target="_self" href="#qd_section"><s></s>渠道服务<b></b></a> 
-		<a class="nav a6" target="_self" href="#ty_section"><s></s>用户体检<b></b></a> 
-		<a class="nav a7" target="_self" href="#"><s></s>咨询<b></b></a> 
-		<a class="nav a6" target="_self" href="#"><s></s>行情<b></b></a> 
-		<a class="nav a7" target="_self" href="tgy.html"><s></s>托管云<b></b></a> 
+		<a class="item a1" target="_self" href="#kh_section"><s></s>开户<b></b></a> 
+		<a class="item a2" target="_self" href="#jy_section"><s></s>交易<b></b></a> 
+		<a class="item a3" target="_self" href="#fw_section"><s></s>在线服务<b></b></a> 
+		<span class="item a4 hyx"><s></s>行业云<b></b></span>
+		<a class="item a5" target="_self" href="#qd_section"><s></s>渠道服务<b></b></a> 
+		<a class="item a6" target="_self" href="#ty_section"><s></s>用户体检<b></b></a> 
+		<a class="item a7" target="_self" href="#"><s></s>咨询<b></b></a> 
+		<a class="item a6" target="_self" href="#"><s></s>行情<b></b></a> 
+		<a class="item a7" target="_self" href="tgy.html"><s></s>托管云<b></b></a> 
 		</div> 
 	</div>
 		<section id="kh_section">
 			<div id="kh_content">
+				<!--
 				<div class="howinvest-desc">
 					<h3 class="title">开户</h3>
 				</div>
@@ -57,6 +131,29 @@
 					</div>		
 				</div>
 				<br/>
+				-->
+
+				<div class="h-box bg-f8 h-box-c">
+						<div class="h-box-inner">
+							<div class="fr txt-box">
+								<h3>开户</h3>
+								<p>• 最极致的开户体验和一体化的产品服务</p>
+								<p>• 极大减少券商系统开发的综合成本</p>
+								<p>• 大幅降低券商对外推广的运营成本</p>
+								<div class="color-tips tips-b">
+									<ul>
+										<li class="item-1"><a href="kh.html#ywjs">业务介绍</a></li>
+										<li class="item-2"><a href="kh.html#ywlc">业务流程</a></li>
+										<li class="item-3"><a href="kh.html#cxd">创新点</a></li>
+										<li class="item-4"><a href="kh.html#ywzs">展示</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="fl img-box">
+								<img id="khimg" src="http://ui.yunimg.cn/hy/1/1402506683695644003216.png">
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
 		<section id="jy_section">
@@ -73,7 +170,7 @@
 										<li class="item-1"><a href="jy.html#ywjs">业务介绍</a></li>
 										<li class="item-2"><a href="jy.html#ywlc">业务流程</a></li>
 										<li class="item-3"><a href="jy.html#cxd">创新点</a></li>
-										<li class="item-4"><a href="jy.html#ywzs">业务展示</a></li>
+										<li class="item-4"><a href="jy.html#ywzs">展示</a></li>
 									</ul>
 								</div>
 							</div>
@@ -125,7 +222,7 @@
 		</section>
 		<!--产品体验区-->
 		<section id="ty_section">
-			<div class="ty_content bg-f8">
+			<div class="ty_content bg-f8" style="height:500px">
 				 <div class="ty_title">
 				 	<img src="../../resource/images/product/hyty.png">
 				 </div>
@@ -163,9 +260,6 @@
 		   </div>
 
 		</section>
-		<div style="height:500px">
-		
-		</div>
 
 <!--右下角工具栏-->
 	<div class="toolbar">
@@ -196,6 +290,70 @@
 		</span>
 	</a>
 </div>
+
+<footer>
+    <div class="footer_con">
+        <div class="footer_top">
+            <div class="footer_nav">
+                <dl >
+                    <dt><a rel="nofollow">帮助中心</a></dt>
+                    <dd>
+                        <a href="/helpCenter/1.html" rel="nofollow">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="/helpCenter/3.html">易机课堂</a>
+                    </dd>
+                    <dd>
+                        <a href="/news/38.html">易机资讯</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a>服务中心</a></dt>
+                    <dd>
+                        <a href="/helpCenter/2.html" rel="nofollow">服务条款</a>
+                    </dd>
+                    <dd>
+                        <a href="/helpCenter/4.html" rel="nofollow">担保交易</a>
+                    </dd>
+                    <dd>
+                        <a href="/zhijianDetail.html" rel="nofollow">质检说明</a>
+                    </dd>
+                </dl>
+                <dl >
+                    <dt><a rel="nofollow">关于我们</a></dt>
+                    <dd>
+                        <a href="/about_yjw.html" rel="nofollow">了解我们</a>
+                    </dd>
+                    <dd>
+                        <a href="/aboutus/12.html" rel="nofollow">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="/aboutus/13.html" rel="nofollow">加入我们</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="erweima"><img src="../../resource/images/index/03_22.png"></div>
+        <div class="address">
+            <ul>
+                <li><img src="../../resource/images/index/03_07.png"></li>
+                <li><img src="../../resource/images/index/03_09.png"></li>
+                <li><img src="../../resource/images/index/03_12.png"></li>
+                <li><img src="../../resource/images/index/03_15.png"></li>
+            </ul>
+            <div>深圳市金微蓝技术有限公司</div>
+            <p class="p2">金证股份 成员企业</p>
+            <p>深圳市南山区高新七道12号汇恒大厦一期二楼</p>
+            <p>邮编：51807</p>
+            <p>电话：0755-XXXXXXXXX</p>
+        </div>
+    </div>
+    <!--
+    <div>
+        <p>© Copyright 2015 All Rights Reserved  深圳市金微蓝技术有限公司  版权所有 粤ICP备14039243号-1</p>
+    </div>
+    -->
+</footer>
 </body>
 <script src="../../resource/js/libs/require.js" data-main="../../resource/js/product"></script>
 </html>

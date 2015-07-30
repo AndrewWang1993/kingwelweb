@@ -9,10 +9,14 @@ require.config({
     }
 });
 
-require(['jquery','bxslider','backTop'], function($,bxSlider,backTop){
+require(['jquery','bxslider','backTop','nav'], function($,bxSlider,backTop,nav){
+     //右下角标签
      new backTop.BackTop($('#backTop'),{
         mode:'move'
     });
+     //头部nav
+     nav.dropMenu('.drop-menu-effect');
+     
 	//var jQuery = $;
    $(".bxslider").bxSlider({
 		auto:true,

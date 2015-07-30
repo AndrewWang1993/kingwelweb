@@ -1,0 +1,30 @@
+.header{background: #6C6B6B;}
+.header_con {  margin: 0 auto;  height: 35px;  line-height: 35px;width: 900px;  }
+.header_conl {  float: right; color: #60ACE8; }
+.header_conl span {  padding: 0 10px;  }
+.header_conl a {  color: #60ACE8;  }
+.header_conl a:hover {  color: #f04848;  }
+.gh-navbar {  position: relative; min-width: 1100px; z-index: 767;  height: 100px;   background: #fff; }
+.gh-topbar-wrapper, .gh-navbar-wrapper {  position: relative;  }
+.grid-940 {  width: 990px;  margin: 0 auto;  }
+.gh-logo {  float: left;  display: block;  width: 110px;  height: 100px;  background: url(../../resource/images/index/03_03.png) no-repeat 0px center;  }
+.gh-nav {  float: right;  font-size: 16px;  z-index: 111;  }
+.gh-logotitle{float: left;position: relative;height: 100px;}
+.gh-logotitle span{letter-spacing:8px;line-height:100px;color: #666666;font-size: 20px;}
+.gh-logotitle .logotitle1{padding-left:5px;margin-top:5px;}
+.gh-logotitle .logotitle2{padding-left: 3px;}
+.navbox{height:100px;background-position:0 -138px;background-repeat:repeat-x;position:relative;z-index:9;}
+.nav{width: 1060px;margin:0 auto;}
+.nav li{float:left;height:100px;background-position:100% -99px;padding:0px;position:relative;}
+.nav li.last{background:none;}
+.nav li a{float:left;display:block;padding:0px;height:100px;overflow:hidden;}
+.nav li a span{float:left;display:block;padding:0px;line-height:100px;font-size: 14px;color: #908E8E;font-weight: 500;cursor:pointer;width:115px;text-align:center;}
+.nav li.selected a,.nav li a.selected{background-position:0 -60px;text-decoration:none;}
+.nav li.selected a span,.nav li a.selected span{background-position:100% -60px;color:#ffffff; background: #7ecef4;}
+.nav li.selected .submenu{display:block;}
+.nav li .submenu{display:none;position:absolute;top:100px;}
+.nav li .submenu{width:115px;background:#fff;}
+.nav li .submenu li{float:none;padding:0;background:none;height:auto;}
+.nav li .submenu li.last{border:none;}
+.nav li .submenu li a{float:none;padding:0;text-align:center;height:32px;line-height:32px;background:none;color:#9F9F9F; }
+.nav li .submenu li a:hover{background:#7ecef4;font-weight:800;color: white;}

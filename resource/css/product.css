@@ -13,7 +13,7 @@ body, h1, h2, h3, h4, h5, h6, hr, blockquote, dl, dt, dd, ul, ol, li, pre, form,
 }
 a{text-decoration:none;}
 .bg-ff{background:#fff;}
-.bg-f8{background:#f8f8f8;}
+.bg-f8{background:#EFEFEF;}
 .bg-f9{background:#efefef;}
 .fl{float:left;}
 .fr{float:right;}
@@ -25,8 +25,8 @@ img{border:0;}
 	margin: 0 auto;   
 	background-image: none;
   background-color: #090B1A;}
-.wrapa{width:410px;margin-top: 20px;float: right;margin-right:300px;} 
-.nav{width:100px;height:58px;background:#35C5A4;
+.hyx_nav .wrapa{width:410px;margin-top: 20px;float: right;margin-right:300px;} 
+.hyx_nav .item{width:100px;height:58px;background:#35C5A4;
 	display:inline-block;
 	position:relative;
 	line-height:58px;
@@ -41,7 +41,7 @@ img{border:0;}
 .hyx_nav .hyx{
 	background:#16AFEE;
 }
-.nav s{
+.hyx_nav .item s{
 	width:0;
 	height:0;
 	display:block;
@@ -56,7 +56,7 @@ img{border:0;}
 .hyx_nav .hyx s{
 	border-bottom:30px solid #16AFEE;
 } 
-.nav b{
+.hyx_nav .item b{
 	width:0;
 	height:0;
 	display:block;
@@ -71,9 +71,9 @@ img{border:0;}
 .hyx_nav .hyx b{
 	border-top:30px solid #16AFEE;
 }
-.a0{margin-left:150px;} 
-.a1{margin-left:100px;} 
-.a3{margin-left:50px;} 
+.hyx_nav .a0{margin-left:150px;} 
+.hyx_nav .a1{margin-left:100px;} 
+.hyx_nav .a3{margin-left:50px;} 
 .hyx_nav a:hover{background:#8CBF26;color:#333333;} 
 .hyx_nav a:hover s{border-bottom-color:#8CBF26;} 
 .hyx_nav a:hover b{border-top-color:#8CBF26;} 
@@ -163,6 +163,9 @@ img{border:0;}
 
 .h-box-b .txt-box{margin-left:27px;margin-top:0px;width:500px;height:450px}
 .h-box-b .img-box{padding-right:57px;margin-top:50px;}
+
+.h-box-c .txt-box{margin-right:97px;margin-top:70px;}
+
 .color-tips{margin-top:20px;width:100%;}
 .color-tips li{color:#fff;padding:3px 12px;float:left;border-radius:2px;margin-right:12px;margin-bottom:12px;font-size:16px;}
 .color-tips .item-1{background:#4DBFF5;}
@@ -171,6 +174,13 @@ img{border:0;}
 .color-tips .item-4{background:#F57919;}
 .color-tips .item-5{background:#93C12A;}
 .color-tips a{color:#ffffff;}
+.color-tips li:hover{
+	transform: rotate(20deg);
+	-ms-transform: rotate(20deg);		/* IE 9 */
+	-webkit-transform: rotate(20deg);	/* Safari and Chrome */
+	-o-transform: rotate(20deg);		/* Opera */
+	-moz-transform: rotate(20deg);
+}
 
 #jy_content img,#fw_content img,#qd_content img{
 	transition: all 1s ease 0s;

@@ -1,3 +1,6 @@
+/**
+ * 头部弹出下拉
+ */
 define(["jquery"], function($) {
     function dropMenu(obj){
 	    $(obj).each(function(){

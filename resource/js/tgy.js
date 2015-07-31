@@ -20,16 +20,7 @@ require(['jquery','bxslider','backTop','nav','libs/fixednav'], function($,bxSlid
      //滑动固定菜单
     fnav.fiexed('#subNav');
      
-	//var jQuery = $;
- //   $(".bxslider").bxSlider({
-	// 	auto:true,
-	// 	hideControlOnEnd: true,	
-	// 	hideControlOnEnd: "top",
-	// 	prevSelector:$(".slide_wrap .op_prev")[0],
-	// 	nextSelector:$(".slide_wrap .op_next")[0],
-	// 	stepNavtit:["注册","实名认证","交易","投资"]
-	// });
-	// $('.bx-controls').eq(0).prependTo('#J-sliderbox');
+  
 
 	/**四边形**/
 	var hyx_a = $('.hyx_nav a');

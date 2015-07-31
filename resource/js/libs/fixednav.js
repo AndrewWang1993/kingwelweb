@@ -1,4 +1,11 @@
-
+/**
+ * @Author   KENFO
+ * @DateTime 2015-07-31T15:17:26+0800
+ * @param    {[type]}
+ * @return   {[type]}
+ *
+ * 设置滚动固定菜单
+ */
 define(['jquery'],function($){
 	function fixed(el){
 		var mt = $(el).offset().top;

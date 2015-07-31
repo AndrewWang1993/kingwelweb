@@ -229,3 +229,70 @@ img{border:0;}
   background-position: 0 0;
   margin-bottom: 20px;
 }
+
+/**二级菜单**/
+.sub-header{
+	/*background-color: #0078D7;*/
+	box-sizing: border-box;
+  	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+   /* background:-webkit-gradient(linear,10% 10%,10% 100%,color-stop(0.1,#63B8FC),
+    	color-stop(0.5,#0078D7),
+    	color-stop(1,#0078D7));*/
+	background:url(../images/product/subNavBG.png) repeat;
+}
+
+.container .sub-nav{
+	height: 70px;
+	font-weight: normal;
+  	line-height: 1.5;
+  	padding-left: 0;
+  padding-right: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-nav ul{
+	margin: 0;
+  padding-left: 0;
+  list-style: none;
+    display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sub-nav ul>li{
+  float: left;
+  display: inline-block;
+  margin-right: 1px;
+  height: 100%;
+}
+.sub-nav ul li a{
+  overflow: hidden;
+  height: 100%;
+  display: block;
+  padding: 1.2em 1.5em;
+  position: relative;
+  color: #FFFFFF;
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+.sub-nav .nav-item a:hover{
+	font-weight: 80;
+}
+.sub-nav .nav-item a:hover,.sub-nav ul .active a{
+	background-color: #0060ac !important;
+	color:#fff;
+}
+
+
+.fixed_menu {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  filter:alpha(opacity=90);
+	-moz-opacity:0.9; 
+	opacity:0.9;
+}	

@@ -1,4 +1,4 @@
-require.config({
+requirejs.config({
     urlArgs: "bust=" +  (new Date()).getTime(), //生产环境去掉
     baseUrl: '../../resource/js',
     shim:{ //指定依赖

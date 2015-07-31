@@ -1,4 +1,4 @@
-require.config({
+requirejs.config({
     urlArgs: "bust=" +  (new Date()).getTime(), //生产环境去掉
     baseUrl: '../../resource/js',
     shim:{
@@ -10,13 +10,15 @@ require.config({
     }
 });
 
-require(['jquery','bxslider','backTop','nav'], function($,bxSlider,backTop,nav){
+require(['jquery','bxslider','backTop','nav','libs/fixednav'], function($,bxSlider,backTop,nav,fnav){
      //右下角标签
      new backTop.BackTop($('#backTop'),{
         mode:'move'
     });
      //头部nav
      nav.dropMenu('.drop-menu-effect');
+     //滑动固定菜单
+    fnav.fiexed('#subNav');
      
 	//var jQuery = $;
    $(".bxslider").bxSlider({

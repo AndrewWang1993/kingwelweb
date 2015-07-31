@@ -27,11 +27,11 @@
 .index_rightfocus .rightfocus2 a{  min-width: 200px; width:100%; display:block;line-height: 115px;height: 115px;background: url(../../resource/images/index/01_11.png) no-repeat;   background-position: 30px 12px;}
 /*??????????????????????????????????????????*/
 .index-content-item .jzy{width:1100px;margin:0 auto; background:#FFFFFF;}
-.index-content-item .jzy li {  float: left;  min-width: 156px; width:18%; text-align: center; border:1px solid #ffffff;  margin-right: 25px;  padding: 0px 25px;}
-.index-content-item .jzy li:hover{border:1px solid #7ecef4;}
-.index-content-item .jzy li p {  font-size: 14px;  height:150px; }
-.index-content-item .jzy li a div{height: 140px;}
-.index-content-item .jzy li h3 {  margin-bottom: 10px;  font-size: 18px; ; border-bottom:2px solid #7ecef4;   /* margin-top:140px; */}
+.index-content-item .jzy li {  float: left;  min-width: 156px; width:18%; text-align: center; margin-right: 25px;  padding: 0px 25px;}
+
+.index-content-item .jzy li p {  font-size: 14px;  height:150px; color:#333;}
+.index-content-item .jzy li a div{height: 150px;}
+.index-content-item .jzy li h3 {  margin-bottom: 10px;  font-size: 18px; color:#7ecef4;font-weight:600;   border-bottom: 1px solid #7ecef4;   /* margin-top:140px; */}
 .index-content-item .jzy li .ico1{background:url(../../resource/images/index/01_18.png) no-repeat center;}
 .index-content-item .jzy li .ico2{background:url(../../resource/images/index/01_20.png) no-repeat center;}
 .index-content-item .jzy li .ico3{background:url(../../resource/images/index/01_22.png) no-repeat center;}
@@ -40,7 +40,8 @@
 .indexnews{  width: 1100px;margin:0px auto;border-top:2px solid #7ecef4;position:relative;  height: 350px; border-bottom:2px solid #7ecef4; }
 .indexnews .news_more{  -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    border-radius:3px;cursor:pointer; margin:0px auto;width:100px;height:30px;line-height:30px; font-size:18px;background:#7ecef4;text-align:center;color:#ffffff;}
+    border-radius:3px;cursor:pointer; margin:0px auto;width:100px;height:30px;line-height:30px; font-size:18px;}
+.indexnews .news_more a{display:block;background:#7ecef4;text-align:center;color:#ffffff;}
 .news_ul{height: 200px;}
 .indexnews .indexnews-title{background:url(../../resource/images/index/01_32.png) no-repeat left center; float:left;margin-top:30px;}
 .indexnews .indexnews-title a{margin-left:70px;color: #0AAFFD;font-size:15px;display:block;text-decoration:underline;}
